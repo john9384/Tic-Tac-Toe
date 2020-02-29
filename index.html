@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="public/js/main.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="boardFrame">
+		<div id="scoreBoard">
+			<div class="score-holder">
+				<div class="display-item">
+					<span id="playerOneName">Player 1:</span>
+					<span id="firstScore">0</span>
+				</div>
+				<div class="display-item">|</div>
+				<div class="display-item">
+					<span id="secondPlayerName">Computer:</span>
+					<span id="secondScore">0</span>
+				</div>
+				<div class="display-item">
+					<a id="reset">Reset All</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="boardPanel">
+			<div id="playMode">
+				<h1>How would you like to play?</h1>
+				<a id="chooseOne">One Player</a>
+				<a id="chooseTwo">Two Player</a>
+			</div>
+
+			<div id="symbolChoice">
+				<h1>Which do you prefer: X or O?</h1>
+				<a id="chooseX">X</a>
+				<a id="chooseO">0</a>
+				<a id="backToBasic">
+					<i class="fa fa-arrow-left"></i> Back
+				</a>
+			</div>
+
+			<div id="gameGrid">
+				<div class="game-box" id="1"></div>
+				<div class="game-box middle-col" id="2"></div>
+				<div class="game-box" id="3"></div>
+				<div class="game-box middle-row" id="4"></div>
+				<div class="game-box middle-col middle-row" id="5"></div>
+				<div class="game-box middle-row" id="6"></div>
+				<div class="game-box" id="7"></div>
+				<div class="game-box middle-col" id="8"></div>
+				<div class="game-box" id="9"></div>
+			</div>
+			<div class="dialog-box"></div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+body{
+    font-family: 'Architects Daughter', cursive;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #boardFrame {
+    width: 410px;
+    height: 420px;
+    background-color: #362919;
+    margin: 5% auto 0 auto;
+    border-radius: 15px;
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 0;
+  }
+  
+  #boardPanel {
+    padding: 0;
+    background-color: #645230;
+    margin: 0 auto;
+    width: 360px;
+    height: 330px;
+    box-shadow: 0 -10px 50px #493C23 inset, 0 0 15px #372D1B inset;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #playMode h1, #symbolChoice h1 {
+    font-size: 200%;
+    margin-top: 40px;
+  }
+  
+  #symbolChoice, #playMode {
+    display: block;
+    position: absolute;
+    right: 5px;
+    z-index: 2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #symbolChoice {
+    display: none;
+  }
+  
+  #chooseOne, #chooseTwo, #chooseX, #chooseO {
+    display: block;
+    color: #fff;
+    font-size: 21px;
+    margin-top: 30px;
+  }
+  
+  #scoreBoard {
+    margin: 0;
+    padding: 10px 0 0 0;
+    color: #B5B5B5;
+    height: 50px;
+  }
+  
+  .score-holder {
+    display: none;  
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #reset {
+    font-size: 16px;
+    color: #B5B5B5;
+  }
+  
+  #chooseOne:hover, 
+  #chooseTwo:hover, 
+  #chooseX:hover, 
+  #chooseO:hover, 
+  #reset:hover,
+  #playAgain:hover {
+    color: #fff; 
+    border-radius: 20px;
+    border: 2px dashed #BBD851;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .10s ease-out;
+  }
+  
+  #chooseOne:hover, #chooseTwo:hover {
+    width: 50%;
+    margin: auto;
+    margin-top:30px;
+  }
+  
+  #chooseX, #chooseO {
+    font-size: 40px;
+    display: inline;
+  }
+  
+  #backToBasic, #playAgain {
+    display: block;
+    color: #fff;
+    font-size: 21px;
+    margin-top:30px;
+  }
+  
+  #backToBasic:hover {
+    color: #CEA79B; 
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .game-box { 
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    color: #BBD851;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .dialog-box {
+    display: block;
+    width:  200px;
+    top: 50%;
+    background-color: rgba(54, 41, 25, 0.8);
+    position: absolute;
+    left: 50%;
+    margin: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em; 
+  }
+  
+  .middle-col {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;}
+  
+  .middle-row {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;}
+  
+  #gameGrid {
+    display: none;
+    width: 360px;
+    height: 330px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
